@@ -1,8 +1,8 @@
 function selectionSort(array) {
     // Only change code below this line
   
-    for (let i = 0; i < array.length; i++) {
-      //assume the samllest element is the first element
+    for (let i = 0; i < array.length-1; i++) {
+      //assume the smallest element is the first element
     let min = i;
     // loop through the resst of array(unsorted part)
       for (let j = i+1 ; j < array.length; j++)  {
