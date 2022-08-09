@@ -77,3 +77,21 @@
 // var a = obj.foo
 // a() // second output
 
+
+
+function bar () {
+    var name = 'Brian';
+  
+    //alert 'string'
+    console.log(typeof name);
+  
+    //cast to boolean
+    var bool = !!name;
+  
+    //alert 'boolean'
+    console.log(!name);
+  }
+
+  // bar()
+
+  console.log(false || true)
