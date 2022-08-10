@@ -4,7 +4,6 @@ var MaxHeap = function() {
   
     this.print = () => [...this.heap];
   
-    let leftChildIndex  = (i) => 2 * i;
     let parentIndex = (i) => Math.floor(i / 2);
   
     this.insert = (item) => {
