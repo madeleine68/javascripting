@@ -79,19 +79,43 @@
 
 
 
-function bar () {
-    var name = 'Brian';
+// function bar () {
+//     var name = 'Brian';
   
-    //alert 'string'
-    console.log(typeof name);
+//     //alert 'string'
+//     console.log(typeof name);
   
-    //cast to boolean
-    var bool = !!name;
+//     //cast to boolean
+//     var bool = !!name;
   
-    //alert 'boolean'
-    console.log(!name);
+//     //alert 'boolean'
+//     console.log(!name);
+//   }
+
+//   // bar()
+
+//   console.log(false || true)
+
+const fn = (Q) => {
+  const N = Q.length -1;
+  let S = [];
+  S.push(0)
+      for (let i = 0; i < N; i++) {
+          if (Q[i][0] == 0) {
+            S.push(Q[i][1])
+            // console.log(Q[i][1])
+       } else {
+             for (let j = 0; j < S.length-1; j++) {
+                  S.push(S[j]^ Q[i][1])
+               }
+          }
+      }
+      console.log (S)
   }
-
-  // bar()
-
-  console.log(false || true)
+  
+  const Q = [[ 0, 6 ], [ 0, 3 ],
+                 [ 0, 2 ], [ 1, 4 ],
+                 [ 1, 5 ]];
+  // for (let i = 0; i < N; i++) {}
+  
+  fn(Q)
