@@ -120,21 +120,32 @@
   
 //   fn(Q)
 
-function solution(sequence) {
-  let arr = sequence.slice()
+// function solution(sequence) {
+//   let arr = sequence.slice()
 
-  for (let i = 0; i < sequence.length; i++) {
-      arr.splice(i, 1)
+//   for (let i = 0; i < sequence.length; i++) {
+//       arr.splice(i, 1)
     
-      if (arr[i] >= arr[i+1]) {
-          return false; 
-      } else {
-          arr = sequence.slice()
+//       if (arr[i] >= arr[i+1]) {
+//           return false; 
+//       } else {
+//           arr = sequence.slice()
 
-      }
+//       }
    
-  }
-  return true
-}
+//   }
+//   return true
+// }
 
-console.log(solution([1,3,2]))
+// console.log(solution([1,3,2]))
+var funList =[]
+for (var i = 0; i < 5; i++){
+    console.log(i)
+    funList[i] = function(){
+        console.log("value :" +i)
+    }
+}
+console.log(funList)
+for (var j = 0; j < 5; j++){
+    funList[j]()
+}
