@@ -19,12 +19,12 @@
 // // // }
 
 
-// // //  newConvo.latestMessageText = message.text;
-// // //         newConvo.unreadMessagesNumber += 1;
+ newConvo.latestMessageText = message.text;
+        newConvo.unreadMessagesNumber += 1;
 
-// // //          const readMessages = useCallback(
-// // //     (data) => {
-// // //       const { conversationId } = data;
+         const readMessages = useCallback(
+    (data) => {
+      const { conversationId } = data;
 
 // // //       const conversationsCopy = [...conversations];
 // // //       conversationsCopy.forEach((convo, id) => {
@@ -138,14 +138,18 @@
 // }
 
 // console.log(solution([1,3,2]))
-var funList =[]
-for (var i = 0; i < 5; i++){
-    console.log(i)
-    funList[i] = function(){
-        console.log("value :" +i)
-    }
-}
-console.log(funList)
-for (var j = 0; j < 5; j++){
-    funList[j]()
-}
+// var funList =[]
+// for (var i = 0; i < 5; i++){
+//     console.log(i)
+//     funList[i] = function(){
+//         console.log("value :" +i)
+//     }
+// }
+// console.log(funList)
+// for (var j = 0; j < 5; j++){
+//     funList[j]()
+// }
+
+const A = { 0: 1, b : 2}
+console.log(A[0])
+console.log(A['0'])
